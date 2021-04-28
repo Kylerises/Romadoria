@@ -6,39 +6,118 @@
         
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Romadoria</title>
-        <link rel="stylesheet" href="css/index.css" type="text/css" media="all" />
-        
+        <title>Imperium-Romanum</title>
+        <link href="/css/style.css" type="text/css" rel="stylesheet"/>
     </head>
     
         <body>
             
             <style>
-                
-                body {
-                background: url('romadoria.jpg');
-                background-repeat :no-repeat;
-                background-size :cover;
-                } 
-                
+                body
+                {
+                    background: url('/background/background.jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
             </style>
             
-            <h1>Romadoria</h1>
-            <p>Romadoria est un jeu de gestion et de stratégie à l'époque de l'antiquité romaine, menez des combats épiques contre d'autre joueurs et devenez le nouvel Empereur le plus puissant.</p>
-            
-            <div class="form-register">
-            <legend>Create your account</legend>
-            
-            <form>
-                <label for= "username">Username</label>
-                <input type="Text"><br>
-                <label for="password">Password</label>
-                <input type="password"><br>
-                <label for= "email"> Email</label>
-                <input type="Text"></input><br>
+                <div>
+                    
+                    <h1> Imperium Romanum </h1>
+                    
+                    <p> Imperium-Romanum est un jeu de gestion et de stratégie regroupant des empereurs prêt à tout pour devenir le plus puissant. <br> Des combats extraordinaires, des alliances , des guerres palpitantes. <br> Rejoignez dés maintenant de nombreux joueurs en quète de la première place, ce sera peut-être vous! </p>
+                    
+                </div>
                 
-                
-            
+                    <fieldset>
+                        
+                        <div>
+                            
+                            <legend> S'enregistrer</legend>
+                                
+                                <label for="username"></label>
+                                
+                                <input type="text" name="username" id="username" value="" required placeholder="Nom d'utilisateur"/>
+                                
+                        </div>
+                        
+                        <div>
+                                
+                                <label for="password"></label>
+                                
+                                <input type="password" name="password" id="password" value="" required placeholder="Mot de passe"/>
+                                
+                        </div>
+                        
+                        <div>
+                            
+                                <label for="email"></label>
+                                
+                                <input type="email" name="email" id="email" value="" required placeholder="exemple@example.com"/>
+                                
+                        </div>
+                        
+                        <div>
+                            
+                                    <select>
+                                        
+                                        <option>Pack constructeur</option>
+                                        
+                                        <option>Pack du combattant</option>
+                                        
+                                        <option>Pack du production</option>
+                                        
+                                        <option> Pack premium</option>
+                                        
+                                    </select>
+                        </div>
+                        
+                        <div>
+                            
+                                <input type="checkbox" name="cgu" id="cgu" value="" required />
+                            
+                                <label for="cgu">J'accepte les conditions générales d'utilisation</label>
+                            
+                        </div>
+                        
+                        <div>
+                            
+                                <label for="register"></label>
+                            
+                                <input type="button" id="register" value="S'enregistrer" />
+                                
+                        </div>
+                        
+                    </fieldset>
+                    
+                    <fieldset class="fieldlog">
+                        
+                        <div class="log">
+                            
+                            <legend id="name"> Connexion </legend>
+                            
+                            <label for="user"></label>
+                            <input type="text" name="user" id="user" placeholder="Nom d'utilisateur"/>
+                            
+                            <label for="passw"></label>
+                            <input type="password" name="passw" id="passw" placeholder="Mot de Passe" />
+                            
+                        </div>
+                        
+                        <div class="boxlog">
+                            
+                            <input type="checkbox" name="rememberme" id="rememberme" />
+                            <label for="rememberme">Se souvenir de moi</label>
+                            
+                        </div>
+                        
+                        <div class="buttlog">
+                                
+                            <label for="login"></label>
+                            <input type="button" name="login" id="login" value="Se connecter" />
+                            
+                        </div>
+                        
+                    </fieldset>
         </body>
-
 </html>
